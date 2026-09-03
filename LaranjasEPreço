@@ -1,0 +1,23 @@
+2)	Laranjas custam R$ 0,30 cada se forem compradas menos do que uma dúzia, e R$ 0,25 se forem compradas pelo menos doze. 
+Escreva um programa que leia o número de laranjas compradas, calcule e escreva o valor total da compra
+
+#include <stdio.h>
+int main()
+{
+    float laranjas, total1, qtd, total2;
+
+    printf("digite o total de laranjas compradas:");
+    scanf("%f", &qtd);
+
+    if(qtd < 12)
+    {
+        total1 = qtd * 0.30;
+        printf("valor total da compra:%.2f", total1);
+    }
+    else
+    {
+        total2 = qtd * 0.25;
+        printf("valor total da compra(duzia):%.2f", total2);
+
+    }
+}      
