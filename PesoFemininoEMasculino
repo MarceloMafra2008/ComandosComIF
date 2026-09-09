@@ -1,0 +1,36 @@
+//	O programa deve calcular o peso ideal de uma pessoa, porém este cálculo é diferente para homens e mulheres, assim utilize a fórmula adequada:
+//homens: (72.7 * Altura) –58 
+//mulheres: (62.1 * Altura) –44.7
+
+#include <stdio.h>
+int main()
+{
+    float altura, masc, fem, genero;
+
+    printf("\n(!!Exemplo: 1.50!!)");
+    printf("\nDigite a sua altura no formato (x.xx):");
+    scanf("%f", &altura);
+
+    printf("\nDigite seu genero (1 para Masculino) ou (2 para Feminino):");
+    scanf("%f", &genero);
+    if(genero < 1 || genero >2)
+    {
+        printf("\nATENCAO!!");
+        printf("\nDigite (1 para MACULINO) ou (2 para FEMININO)");
+        printf("\nNumero errado inserido, digite novamente (1 ou 2):");
+        scanf("%f", &genero);
+    }
+
+    if( genero == 1 )
+    {
+       masc = (72.7*altura)-58;
+       printf("\nPESO IDEAL MASCULINO");
+       printf("\nMasculino:%.2f\n", masc);
+    }  
+    else
+    {
+        fem = (62.1*altura)-44.7;
+        printf("\nPESO IDEAL FEMININO");
+        printf("\nFeminino:%.2f", fem);
+    }
+}
