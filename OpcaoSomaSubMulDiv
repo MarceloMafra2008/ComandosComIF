@@ -16,12 +16,12 @@ int main()
         printf("\nInsira o primeiro valor: ");
         scanf("%d", &digite1);
 
-        printf("\nInsira o segundo valor: ");
+        printf("Insira o segundo valor:");
         scanf("%d", &digite2);
     }   
     else
     {
-       printf("Opercao escolhida errada!");
+       printf("\nOpercao escolhida errada!");
     }
 
       if(op == 1)
@@ -51,7 +51,7 @@ int main()
                 }
                 else
                {
-                   printf("RESULTADO");
+                   printf("\nRESULTADO");
                    printf("\nDivisao %d/%d = %.2f", digite1, digite2, (float)digite1/digite2);
                }
             }
