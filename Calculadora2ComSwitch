@@ -18,12 +18,13 @@ int main()
     printf("\nDigite a operacao:");
     scanf("%d", &op);
     
+   
       switch(op)
       {
           case 1: printf("Valor da soma dos numeros %d+%d=%d", num1, num2, num1+num2);   
                   break;
                 
-          case 2: printf("Valor da subtracao dos numeros %d+%d=%d", num1, num2, num1-num2);
+          case 2: printf("Valor da subtracao dos numeros %d-%d=%d", num1, num2, num1-num2);
                   break;
                  
           case 3: printf("Valor da multiplicacao %d*%d=%d", num1, num2, num1*num2);
@@ -35,7 +36,7 @@ int main()
                  }
                  else
                  {
-                    printf("Valor da divisao %d/%d=%f", num1, num2, (float)num1/num2);   
+                    printf("Valor da divisao %d/%d=%.2f", num1, num2, (float)num1/num2);   
                  }     
                   break;
           
