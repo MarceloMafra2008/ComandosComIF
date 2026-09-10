@@ -1,0 +1,60 @@
+#include <stdio.h>
+int main()
+{
+    int digite1, digite2, op;
+
+
+    printf("\n|1 para soma|");
+    printf("\n|2 para subtracao|");
+    printf("\n|3 para multiplicacao|");
+    printf("\n|4 para divisao|\n");
+    
+    printf("\nEscolha a Operaçao:");
+    scanf("%d", &op);
+    if(op>=1 || op<=4)
+    {
+        printf("\nInsira o primeiro valor: ");
+        scanf("%d", &digite1);
+
+        printf("\nInsira o segundo valor: ");
+        scanf("%d", &digite2);
+    }   
+    else
+    {
+       printf("Opercao escolhida errada!");
+    }
+
+      if(op == 1)
+      {
+          printf("\nRESULTADO");
+          printf("\nSoma dos numeros %d+%d = %d", digite1, digite2, digite1+digite2);
+      }  
+      else
+      {
+         if(op == 2)
+         {
+             printf("\nRESULTADO");
+             printf("\nSubtracao dos numeros %d-%d = %d", digite1, digite2, digite1-digite2);
+         }
+         else
+         {
+            if(op == 3)
+            {
+                printf("\nRESULTADO");
+                printf("\nMultiplicacao dos numeros %d*%d = %d", digite1, digite2, digite1*digite2);
+            }
+            else
+            {
+                if(digite2==0)
+                {
+                    printf("\nNao pode ser dividido!");
+                }
+                else
+               {
+                   printf("RESULTADO");
+                   printf("\nDivisao %d/%d = %.2f", digite1, digite2, (float)digite1/digite2);
+               }
+            }
+         }
+      }
+}
